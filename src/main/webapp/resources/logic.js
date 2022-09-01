@@ -1,14 +1,7 @@
 
 var vm = new Vue({
-    el: '#main',
+    el: '#allBody',
     data: {
-        nameApp: 'Travel Diary'
+        appName: 'Travel Diary'
     }
 })
-
-logHiOnConsole = function(){
-    console.log("Hi");
-}
-
-let loginButton = document.getElementById("loginButton");
-loginButton.addEventListener("click", logHiOnConsole);

@@ -10,7 +10,7 @@
 
     <!-- Custom styles for cover template by bootstrap -->
     <link href="./resources/bootstrap.rtl.min.css" rel="stylesheet">
-    <link href="resources/cover-preload.css" rel="stylesheet">
+    <link href="./resources/cover-preload.css" rel="stylesheet">
     <link href="resources/cover.css" rel="stylesheet">
 
     <!-- my styles definition-->
@@ -24,13 +24,11 @@
 </head>
 <body class="d-flex h-100 text-center text-bg-dark">
 
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" id="allBody">
     <header class="mb-auto">
         <div>
-
-            <h3 class="float-md-start mb-0">Travel Diary</h3>
+            <h3 class="float-md-start mb-0">{{appName}}</h3>
             <nav class="nav nav-masthead justify-content-center float-md-end">
-                <!-- <img src="./img/logo.jpg" alt="logo web app" class="logo"/> -->
                 <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a>
                 <a class="nav-link fw-bold py-1 px-0" href="./pages/login.html">Login</a>
                 <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
@@ -39,14 +37,11 @@
     </header>
 
     <main class="px-3" id="main">
-        <h1>{{nameApp}}</h1>
-        <p class="lead">Here I need to write something to convince users to use my Web App, Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Sed ultrices nunc dui, sit amet
-            pulvinar dolor finibus ac. Pellentesque ac nunc nec leo convallis tincidunt quis eget elit. Duis bibendum
-            feugiat pretium. Maecenas in mattis tellus. Integer congue enim eu congue imperdiet. Vestibulum
-            pellentesque.</p>
+        <h1>{{appName}}</h1>
+        <p class="lead">Travel Diary is a chrono diary that lets you save the locations of your travels. Start to use it
+            today and you will never forget the beautiful locations of your travels.</p>
         <p class="lead">
-            <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white" id="loginButton">Login</a>
+            <a href="./pages/login.html" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Login</a>
         </p>
     </main>
 
