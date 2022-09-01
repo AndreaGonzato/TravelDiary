@@ -1,6 +1,6 @@
 
 var vm = new Vue({
-    el: '#body',
+    el: '#main',
     data: {
         nameApp: 'Travel Diary'
     }
