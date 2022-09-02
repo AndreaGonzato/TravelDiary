@@ -12,10 +12,22 @@
   <link href="../../resources/bootstrap.rtl.min.css" rel="stylesheet">
   <link href="../../resources/cover-preload.css" rel="stylesheet">
   <link href="../../resources/cover.css" rel="stylesheet">
+  <!-- leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+        crossorigin=""/>
+  <link href="dashboard-style.css" rel="stylesheet">
 
   <script src="../../resources/less.js" type="text/javascript" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-  <script src="../../resources/vue.js" defer></script>
+  <script src="../../resources/MyGlobalVue.js" defer></script>
+
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+          integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+          crossorigin=""></script>
+
+  <script src="LefletManger.js" defer></script>
 
 </head>
 
@@ -36,7 +48,11 @@
     <h1>Dashboard</h1>
     <p class="lead">
       This is the dashboard
+      <a href="../empty-page/empty.html">go to an empty page2</a>
     </p>
+
+    <div id="map"></div>
+
   </main>
 
   <footer class="mt-auto text-white-50">
