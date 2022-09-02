@@ -1,4 +1,3 @@
-
 var vm = new Vue({
     el: '#allBody',
     data: {
