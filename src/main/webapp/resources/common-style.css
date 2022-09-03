@@ -1,3 +1,11 @@
 #footer{
-    margin-top: 280px;
+    display: flex;
+    float: bottom;
+    margin-top: 280px !important;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    margin-top: 15vh;
 }
