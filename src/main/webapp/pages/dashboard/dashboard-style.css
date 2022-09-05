@@ -6,3 +6,10 @@
     margin-right: auto;
 }
 
+#addButton.btn{
+    margin-top: 7vh;
+}
+
+#notesDiv{
+    margin-bottom: 5vh;
+}
